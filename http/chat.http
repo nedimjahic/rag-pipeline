@@ -1,9 +1,0 @@
-### GET request to example server
-POST http://localhost:8081/api/chat
-content-type: application/json
-
-{
-  "message": "tell me a joke"
-}
-
-###

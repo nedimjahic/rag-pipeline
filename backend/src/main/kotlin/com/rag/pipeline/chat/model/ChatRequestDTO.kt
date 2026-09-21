@@ -1,5 +1,5 @@
 package com.rag.pipeline.chat.model
 
-class ChatRequestDTO(val message: String) {
+class ChatRequestDTO(val text: String) {
 
 }

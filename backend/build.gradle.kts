@@ -21,6 +21,7 @@ repositories {
 extra["springAiVersion"] = "2.0.1"
 
 dependencies {
+    implementation("jakarta.validation:jakarta.validation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
     implementation("org.springframework.ai:spring-ai-starter-model-ollama")

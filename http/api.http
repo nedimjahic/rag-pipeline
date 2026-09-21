@@ -1,0 +1,17 @@
+### POST chat
+POST http://localhost:8081/api/chat
+content-type: application/json
+
+{
+  "text": "tell me a joke"
+}
+
+### POST extract
+POST http://localhost:8081/api/extract
+content-type: application/json
+
+{
+  "text": "Pay 1250 EUR to DE89370400440532013000 by 2026-03-03"
+}
+
+###

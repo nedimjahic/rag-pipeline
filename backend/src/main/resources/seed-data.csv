@@ -1,0 +1,201 @@
+category,text
+spring,Spring Boot auto-configures beans based on what it finds on the classpath.
+spring,The Spring IoC container manages the lifecycle of application objects called beans.
+spring,Dependency injection lets Spring supply collaborators instead of objects creating them.
+spring,Constructor injection is preferred over field injection for testability and immutability.
+spring,A Spring bean is a singleton by default unless a different scope is declared.
+spring,The @RestController annotation combines @Controller and @ResponseBody.
+spring,Spring profiles let you activate different configuration for dev, test, and prod.
+spring,application.yml externalizes configuration so it lives outside compiled code.
+spring,Spring Data repositories generate query implementations from method names.
+spring,The @Transactional annotation wraps a method in a database transaction.
+spring,Spring Boot starters are curated dependency bundles that reduce version conflicts.
+spring,Actuator exposes health, metrics, and info endpoints for running applications.
+spring,A @Configuration class declares beans through @Bean-annotated methods.
+spring,Spring MVC maps HTTP requests to handler methods using request mappings.
+spring,The DispatcherServlet is the front controller that routes every incoming request.
+spring,Spring Security filters intercept requests before they reach controllers.
+spring,WebClient is the reactive, non-blocking successor to the older RestTemplate.
+spring,Bean validation with Jakarta annotations rejects invalid request payloads early.
+spring,Spring Boot embeds Tomcat so applications run as a self-contained jar.
+spring,Component scanning discovers annotated classes and registers them as beans.
+spring,The @Value annotation injects a single property value into a field or parameter.
+spring,Spring AOP applies cross-cutting concerns like logging through proxies.
+spring,ApplicationEventPublisher lets beans communicate through decoupled events.
+spring,Spring Boot DevTools restarts the context automatically when classes change.
+spring,A BeanPostProcessor can modify bean instances before and after initialization.
+kotlin,A Kotlin data class generates equals, hashCode, toString, and copy automatically.
+kotlin,Constructor parameters need val or var to become properties rather than arguments.
+kotlin,Kotlin distinguishes nullable types with a question mark on the type name.
+kotlin,The Elvis operator returns a fallback value when the left side is null.
+kotlin,The double-bang operator asserts a value is non-null and throws otherwise.
+kotlin,Platform types come from Java and carry no nullability information.
+kotlin,Extension functions add behavior to a class without inheriting from it.
+kotlin,A sealed class restricts its subclasses to a known set for exhaustive when.
+kotlin,Kotlin coroutines provide structured concurrency without blocking threads.
+kotlin,The suspend keyword marks a function that can pause and resume execution.
+kotlin,Kotlin collections are read-only by default unless declared mutable.
+kotlin,A when expression is an exhaustive alternative to a chain of if branches.
+kotlin,Higher-order functions accept or return other functions as values.
+kotlin,The let scope function runs a block on a value and returns the block result.
+kotlin,Companion objects hold members that belong to the class rather than instances.
+kotlin,Kotlin smart casts automatically narrow a type after a successful check.
+kotlin,Destructuring declarations unpack an object into several named variables.
+kotlin,An inline function copies its body to the call site to avoid lambda overhead.
+kotlin,Kotlin interoperates with Java bidirectionally on the same JVM classpath.
+kotlin,The lateinit modifier defers non-null property initialization to a later point.
+kotlin,Default parameter values remove the need for many overloaded functions.
+kotlin,String templates embed expressions directly inside string literals.
+kotlin,Kotlin has no checked exceptions, so nothing forces a try-catch block.
+kotlin,The apply scope function configures an object and returns the object itself.
+kotlin,Type inference lets Kotlin deduce a variable type from its initializer.
+kubernetes,Kubernetes schedules pods onto worker nodes based on resource requests.
+kubernetes,A pod is the smallest deployable unit and can hold one or more containers.
+kubernetes,A Deployment manages replica sets to keep a desired number of pods running.
+kubernetes,A Service gives a stable network identity to a changing set of pods.
+kubernetes,Ingress routes external HTTP traffic to services based on host and path rules.
+kubernetes,ConfigMaps hold non-secret configuration separate from container images.
+kubernetes,Secrets store sensitive values like passwords and tokens for pods to consume.
+kubernetes,Liveness probes let the kubelet restart containers that have become unhealthy.
+kubernetes,Readiness probes gate traffic until a container is prepared to serve it.
+kubernetes,Namespaces partition a cluster into isolated groups of resources.
+kubernetes,A StatefulSet gives pods stable identities and persistent storage.
+kubernetes,Horizontal Pod Autoscaler scales replicas based on observed metrics.
+kubernetes,Resource limits cap how much CPU and memory a container may consume.
+kubernetes,kubectl is the command-line client that talks to the cluster API server.
+kubernetes,The control plane holds the API server, scheduler, and controller manager.
+kubernetes,etcd is the distributed key-value store that holds all cluster state.
+kubernetes,A DaemonSet runs a copy of a pod on every node in the cluster.
+kubernetes,Rolling updates replace old pods gradually to avoid downtime.
+kubernetes,Persistent volumes decouple storage lifecycle from the pod that uses it.
+kubernetes,Istio injects a sidecar proxy to manage service-to-service traffic.
+kubernetes,An Istio VirtualService defines routing rules for requests to a host.
+kubernetes,An Istio DestinationRule configures load balancing and connection pools.
+kubernetes,An AuthorizationPolicy in Istio allows or denies traffic between workloads.
+kubernetes,OpenShift builds on Kubernetes with added developer and operator tooling.
+kubernetes,Helm packages Kubernetes manifests into versioned, reusable charts.
+database,A relational database organizes data into tables of rows and columns.
+database,A primary key uniquely identifies each row within a table.
+database,A foreign key enforces a reference from one table to another.
+database,An index speeds up reads at the cost of slower writes and extra storage.
+database,Normalization reduces redundancy by splitting data across related tables.
+database,A transaction groups statements so they succeed or fail as a unit.
+database,ACID properties guarantee atomicity, consistency, isolation, and durability.
+database,An inner join returns only rows that match in both joined tables.
+database,A left join keeps every row from the left table regardless of matches.
+database,Connection pools reuse database connections to avoid costly setup per query.
+database,A prepared statement separates SQL structure from parameter values.
+database,PostgreSQL supports JSON columns alongside traditional relational data.
+database,The pgvector extension adds a vector column type for similarity search.
+database,An HNSW index enables fast approximate nearest-neighbor lookups over vectors.
+database,Cosine distance measures the angle between two embedding vectors.
+database,A materialized view stores query results for faster repeated reads.
+database,Optimistic locking detects concurrent edits using a version column.
+database,Database migrations version schema changes so environments stay in sync.
+database,Flyway applies ordered SQL migration scripts on application startup.
+database,A deadlock occurs when two transactions each wait on the other's locks.
+database,Sharding spreads rows across multiple databases to scale horizontally.
+database,Read replicas serve queries to reduce load on the primary database.
+database,An execution plan shows how the database intends to run a query.
+database,A composite index covers queries that filter on several columns together.
+database,Eventual consistency allows replicas to converge on a value over time.
+ai,A large language model predicts the next token given the preceding context.
+ai,An embedding maps a piece of text to a point in a high-dimensional space.
+ai,Texts with similar meaning end up close together in embedding space.
+ai,Retrieval-augmented generation grounds answers in retrieved source documents.
+ai,Chunking splits long documents into passages small enough to embed usefully.
+ai,A vector store indexes embeddings so nearest neighbors can be found quickly.
+ai,Top-k retrieval returns the k most similar chunks for a given query.
+ai,A prompt template separates fixed instructions from variable user input.
+ai,Temperature controls how random or deterministic a model's output is.
+ai,Structured output makes a model return JSON that maps onto a typed object.
+ai,Tool calling lets a model invoke functions and use their results.
+ai,An agent runs tools in a loop with memory to pursue a goal.
+ai,The Model Context Protocol standardizes how tools and data reach a model.
+ai,Hallucination is when a model produces confident but incorrect information.
+ai,A system prompt sets the persona and rules for a conversation.
+ai,Fine-tuning adjusts model weights to change behavior, format, or tone.
+ai,RAG suits changing knowledge while fine-tuning suits stable behavior.
+ai,Reranking reorders retrieved chunks to put the most relevant ones first.
+ai,Query rewriting reformulates a user question to improve retrieval quality.
+ai,An evaluation harness scores answers for faithfulness and relevance.
+ai,Context window is the maximum amount of text a model can consider at once.
+ai,Streaming sends tokens to the client as they are generated.
+ai,Ollama runs open-weight language models locally through a simple API.
+ai,A dense retriever matches on meaning while sparse retrieval matches on keywords.
+ai,Embedding dimension must match between the model and the vector store column.
+security,TLS encrypts traffic between a client and a server over the network.
+security,A certificate binds a public key to an identity signed by an authority.
+security,Mutual TLS authenticates both the client and the server to each other.
+security,OAuth 2.0 delegates authorization without sharing user credentials.
+security,A JWT carries signed claims that a resource server can verify offline.
+security,An access token grants short-lived permission to call protected resources.
+security,A refresh token obtains new access tokens without re-authenticating.
+security,Role-based access control grants permissions through assigned roles.
+security,Hashing passwords with a salt defends against precomputed lookup attacks.
+security,A secrets manager stores and rotates credentials outside application code.
+security,HashiCorp Vault issues dynamic, short-lived secrets on demand.
+security,The principle of least privilege limits access to only what is needed.
+security,A certificate authority signs and revokes certificates for a trust domain.
+security,Certificate expiry is a common cause of sudden service outages.
+security,Encryption at rest protects stored data if the disk is compromised.
+security,A security audit reviews configuration and code for exploitable weaknesses.
+security,Rate limiting throttles requests to blunt abuse and denial-of-service attempts.
+security,CORS controls which origins a browser may call from client-side code.
+security,A man-in-the-middle attack intercepts traffic between two parties.
+security,Key rotation replaces cryptographic keys periodically to limit exposure.
+security,An audit log records who did what and when for later review.
+security,SAML exchanges authentication assertions between identity providers.
+security,Zero trust assumes no request is trusted based on network location alone.
+security,Input validation prevents injection attacks by rejecting malformed data.
+security,A revocation list marks certificates that should no longer be trusted.
+banking,A SEPA credit transfer moves euros between accounts across member countries.
+banking,An IBAN encodes the country, bank, and account in a single identifier.
+banking,A BIC identifies a specific bank for international payment routing.
+banking,Settlement is the final transfer of funds between the parties of a trade.
+banking,Clearing reconciles obligations before funds are actually settled.
+banking,A ledger records every debit and credit against an account.
+banking,Double-entry bookkeeping records each transaction in two balancing accounts.
+banking,Know Your Customer rules verify the identity of new account holders.
+banking,Anti-money-laundering checks flag suspicious transaction patterns.
+banking,A payment gateway authorizes and routes card transactions to acquirers.
+banking,Interest accrues on a balance according to a defined rate and period.
+banking,A credit application collects data used to assess a borrower's risk.
+banking,Underwriting evaluates whether to approve a loan and on what terms.
+banking,Collateral secures a loan and can be claimed on default.
+banking,A direct debit lets a payee pull agreed amounts from a payer's account.
+banking,Reconciliation matches internal records against external bank statements.
+banking,A standing order sends a fixed payment on a recurring schedule.
+banking,PSD2 requires strong customer authentication for online payments in Europe.
+banking,An audit trail in banking must be complete and tamper-evident.
+banking,A core banking system holds accounts, balances, and transaction processing.
+banking,Overdraft allows an account to go negative up to an agreed limit.
+banking,A chargeback reverses a card payment after a disputed transaction.
+banking,Foreign exchange converts one currency into another at a market rate.
+banking,Regulatory reporting submits required data to supervisory authorities.
+banking,A payment instruction specifies amount, beneficiary, and value date.
+general,Photosynthesis converts sunlight, water, and carbon dioxide into glucose.
+general,The Great Barrier Reef is the largest living structure on Earth.
+general,Mount Everest is the highest mountain above sea level on the planet.
+general,The human heart pumps blood through two separate circulatory loops.
+general,Honey never spoils because its low moisture resists bacterial growth.
+general,Light from the sun takes about eight minutes to reach the Earth.
+general,The Pacific is the largest and deepest of the world's oceans.
+general,A leap year adds a day in February to keep the calendar aligned.
+general,Water expands when it freezes, which is why ice floats.
+general,The Amazon rainforest produces a large share of the world's oxygen.
+general,Sound travels faster through water than through air.
+general,The Eiffel Tower grows slightly taller in summer as its metal expands.
+general,Octopuses have three hearts and blue copper-based blood.
+general,The speed of light in a vacuum is roughly three hundred thousand kilometers per second.
+general,Bees communicate the direction of food through a waggle dance.
+general,The Sahara is the largest hot desert on the planet.
+general,A rainbow forms when sunlight refracts and reflects inside raindrops.
+general,The moon is slowly drifting away from the Earth each year.
+general,Lightning is hotter than the surface of the sun.
+general,Venice is built across more than a hundred small islands.
+general,The human body contains more bacterial cells than human cells.
+general,Antarctica is the coldest, driest, and windiest continent.
+general,A group of flamingos is called a flamboyance.
+general,Bamboo is among the fastest-growing plants on Earth.
+general,The Mona Lisa has no clearly visible eyebrows.

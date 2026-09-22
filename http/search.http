@@ -1,0 +1,4 @@
+### POST chat
+GET http://localhost:8081/api/search?q=wire beans
+
+###

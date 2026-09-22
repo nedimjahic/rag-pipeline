@@ -24,8 +24,11 @@ dependencies {
     implementation("jakarta.validation:jakarta.validation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-webmvc")
+    implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.ai:spring-ai-starter-model-ollama")
+    implementation("org.springframework.ai:spring-ai-starter-vector-store-pgvector")
     implementation("tools.jackson.module:jackson-module-kotlin")
+    runtimeOnly("org.postgresql:postgresql")
 
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")

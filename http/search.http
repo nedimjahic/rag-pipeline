@@ -1,4 +1,15 @@
-### POST chat
+### search
 GET http://localhost:8081/api/search?q=wire beans
 
-###
+### upload
+POST http://localhost:8081/api/ingest
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="Snoop_Dogg.pdf"
+Content-Type: application/pdf
+
+< docs/Snoop_Dogg.pdf
+--WebAppBoundary--
+
+####

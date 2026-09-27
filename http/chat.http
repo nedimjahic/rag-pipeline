@@ -1,13 +1,13 @@
 ### POST chat
-POST http://localhost:8081/api/chat
+POST http://localhost:8081/api/chat/ask
 content-type: application/json
 
 {
-  "text": "tell me a joke"
+  "text": "Does PostgreSQL support additional data types, other than standard ones?"
 }
 
 ### POST extract
-POST http://localhost:8081/api/extract
+POST http://localhost:8081/api/chat/extract
 content-type: application/json
 
 {
